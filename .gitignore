@@ -1,0 +1,11 @@
+node_modules
+node_modules
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/_about.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/_base.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/_header.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/_navigation.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/_typography.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/_variables.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/main.scssc
+.sass-cache/df18ab81de4e585fb62017564ec06349030d8f5c/style.scssc
+package-lock.json
