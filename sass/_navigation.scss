@@ -1,16 +1,28 @@
 .nav {
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
   min-width: 70vw;
 
-  &__ul {  
+  @media only screen and (max-width: $phone) {
+    width: 100vw;    
+  }
+
+  &__ul { 
     background-color: rgba($color-secondary, .7);
     border: 1px solid $color-primary;
+    border-radius: 3px;
+    box-shadow: 9px 9px 12px rgba($color-text, .5), -1.5px -1.5px 2px rgba($color-primary, .3);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0 1rem; 
+
+    @media only screen and (max-width: $phone) {
+      border-radius: 0;
+      border: none;
+      border-bottom: 2px solid $color-primary;
+      padding: 2rem 0;
+    }
   }
 
   &__item {
@@ -18,22 +30,27 @@
     padding: 1rem 0;
     font-size: 2rem;
     list-style-type: none;
-    width: 14rem;
+    width: 16rem;
     text-align: center;
+    text-transform: uppercase;
 
     @media only screen and (max-width: $tablet) {
       font-size: 1.5rem;
       width: 10rem;
     }
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: rgba($color-text, .6);
+      border-left: 1px solid rgba($color-primary, .5);
+      border-right: 1px solid rgba($color-primary, .5);
       color: $color-hover;
       cursor: pointer;
     }
   }
 
-  &__link {
+  &__link:link,
+  &__link:visited {
     color: inherit;
     text-decoration: none;
   }

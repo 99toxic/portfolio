@@ -8,10 +8,31 @@
   align-items: center;
   height: 100vh;
 
+  @media only screen and (max-width: $tablet) {
+    height: 60vh;
+  }
+
+  @media only screen and (max-width: $phone) {
+    height: 40vh;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+
   &__name {
     color: $color-white;
+    float: left;
+    left: .5rem;
     margin-bottom: -1rem;
     z-index: 100;
+
+    @media only screen and (max-width: $phone) {
+      font-size: 3rem;
+      left: 50%;
+      position: absolute;
+      top: 63%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -20,14 +41,15 @@
 
   &__icon {
     color: $color-white;
+    display: inline-block;
     font-size: 2rem;
+    margin-right: .5rem;
+    transition: all .2s;
 
-    &:not(:last-child) {
-      padding-right: 1rem;
-    }
-
-    &:hover {
+    &:hover,
+    &:active {
       color: $color-hover;
+      transform: translateY(-2px);
     }
     
   }
